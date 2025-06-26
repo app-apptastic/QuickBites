@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924251277434",
+    "project_id": "quickbites-9ea51",
+    "storage_bucket": "quickbites-9ea51.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924251277434:android:68defb6b367867695393c3",
+        "android_client_info": {
+          "package_name": "com.apptastic.quickbites"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBACIC8ykfQiF0pYEU9dU6jGmY5U0V9Ji8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
