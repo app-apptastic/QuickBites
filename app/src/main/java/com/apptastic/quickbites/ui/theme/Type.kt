@@ -6,6 +6,15 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+object AppFontWeight {
+
+    val ExtraLight = FontWeight(300)
+    val Light = FontWeight(400)
+    val Medium = FontWeight(500)
+    val SemiBold = FontWeight(600)
+    val Bold = FontWeight(700)
+    val ExtraBold = FontWeight(750)
+}
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
