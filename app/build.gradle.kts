@@ -31,7 +31,7 @@ android {
             buildConfigField("String", "BASE_URL", "\"${project.properties["BASE_URL_DEBUG"]}\"")
         }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
