@@ -10,6 +10,16 @@
 .DS_Store
 /build
 /captures
+.idea/workspace.xml
+.idea/libraries/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/compiler.xml
+.idea/modules.xml
+.idea/kotlinc.xml
+.idea/copyright/
+.idea/vcs.xml
+.idea/encodings.xml
 .externalNativeBuild
 .cxx
 local.properties
