@@ -51,5 +51,22 @@ fun QuickBitesNavigation(navController: NavHostController, paddingValues: Paddin
     ) {
         // onBoarding/Auth
         composable(QuickBitesDestinations.Welcome.route) {  }
+        composable(QuickBitesDestinations.SignUp.route) {  }
+        composable(QuickBitesDestinations.Logout.route) {  }
+
+        // Bottom Navigation Destinations
+        composable(QuickBitesDestinations.Home.route) {  }
+        composable(QuickBitesDestinations.MyOrders.route) {  }
+        composable(QuickBitesDestinations.BestSeller.route) {  }
+        composable(QuickBitesDestinations.Recommendations.route) {  }
+        composable(QuickBitesDestinations.ContactUs.route) {  }
+
+        // Hamburger Menu Destinations
+        composable(QuickBitesDestinations.MyProfile.route) {  }
+        composable(QuickBitesDestinations.DeliveryAddress.route) {  }
+        composable(QuickBitesDestinations.PaymentMethods.route) {  }
+        composable(QuickBitesDestinations.HelpFaq.route) {  }
+        composable(QuickBitesDestinations.Settings.route) {  }
+        composable(QuickBitesDestinations.Logout.route) {  }
     }
 }
