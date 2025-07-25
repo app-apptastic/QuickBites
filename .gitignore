@@ -20,6 +20,8 @@
 .idea/copyright/
 .idea/vcs.xml
 .idea/encodings.xml
+.idea/AndroidProjectSystem.xml
+.idea/deviceManager.xml
 .externalNativeBuild
 .cxx
 local.properties
