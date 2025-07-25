@@ -22,6 +22,7 @@
 .idea/encodings.xml
 .idea/AndroidProjectSystem.xml
 .idea/deviceManager.xml
+app/google-services.json
 .externalNativeBuild
 .cxx
 local.properties

@@ -12,8 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.apptastic.quickbites.MainApplication
+import com.apptastic.quickbites.navigation.QuickBitesDestinations
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable
@@ -47,6 +49,7 @@ fun QuickBitesNavigation(navController: NavHostController, paddingValues: Paddin
         startDestination = "home",
         modifier = Modifier.padding(paddingValues)
     ) {
-
+        // onBoarding/Auth
+        composable(QuickBitesDestinations.Welcome.route) {  }
     }
 }
