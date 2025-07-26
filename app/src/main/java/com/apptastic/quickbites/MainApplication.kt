@@ -10,12 +10,17 @@ import com.apptastic.quickbites.utils.ConnectivityObserver
 import com.apptastic.quickbites.utils.NetworkEventMessage
 import com.apptastic.quickbites.utils.NetworkManager
 import com.apptastic.quickbites.utils.NetworkStatus
+import com.google.firebase.Firebase
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.analytics
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.launch
 
 @HiltAndroidApp
 class MainApplication: Application() {
 
+    lateinit var firebaseAnalytics: FirebaseAnalytics
     lateinit var connectivityObserver: ConnectivityObserver
         private set // Only settable within this class
 
@@ -25,6 +30,15 @@ class MainApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
+        // Enable Firebase Crashlytics (automatically enabled by default, but explicitly setting it)
+        FirebaseCrashlytics.getInstance().isCrashlyticsCollectionEnabled = true
+
+        // Initialize Firebase Analytics
+        firebaseAnalytics = Firebase.analytics
+
+        // Log App Open Event
+        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.APP_OPEN, null)
+
         // Initialize the connectivity observer
         connectivityObserver = ConnectivityObserver(this)
         // Register the observer with the lifecycle of the application, check below
